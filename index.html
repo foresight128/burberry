@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURBERRY</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 1. .skip menu -->
+    <div class="skip">
+        <a href="#nav">메인메뉴 바로가기</a>
+        <a href="#container">본문 바로가기</a>
+    </div>
+    <!-- 2. header -->
+    <header>
+        <div class="center">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/logo-w.png" alt="burberry main logo" class="logoW">
+                    <img src="images/logo-b.png" alt="burberry main logo" class="logoB">
+                </a>
+            </h1>
+            <div class="hamWrap">
+                <img src="images/ham.png" alt="main menu button" id="hamBtn">
+                <img src="images/ham-b.png" alt="main menu button" id="hambBtn">
+                <img src="images/ham-close.png" alt="main menu close button" id="hamCloseBtn">
+            </div>
+            <div class="searchWrap">
+                <form class="search">
+                    <label for="uSearch" class="searchBtn">
+                        <img src="images/search.png" alt="search button" class="searchW">
+                        <img src="images/search-b.png" alt="search button" class="searchB">
+                    </label>
+                    <input type="text" id="uSearch" name="userSearch">
+                </form>
+            </div>
+            <ul class="gnb">
+                <li><a href="#">MEMBER</a></li>
+                <li><a href="#">CART</a></li>
+            </ul>
+            <nav>
+                <ul id="nav">
+                    <li class="active">
+                        <a href="#">GIFTS</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">WOMEN'S GIFTS</a>
+                                <ul class="subM">
+                                    <li><a href="#">All Gifts</a></li>
+                                    <li><a href="#">The Monogram Collection</a></li>
+                                    <li><a href="#">Personalised Gifts</a></li>
+                                    <li><a href="#">Home Comforts</a></li>
+                                    <li><a href="#">Beauty</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">MEN'S GIFTS</a>
+                                <ul class="subM">
+                                    <li><a href="#">All Gifts</a></li>
+                                    <li><a href="#">Personalised Gifts</a></li>
+                                    <li><a href="#">Home Comforts</a></li>
+                                    <li><a href="#">Grooming</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">CHILDREN'S GIFTS</a>
+                                <ul class="subM">
+                                    <li><a href="#">All Gifts</a></li>
+                                    <li><a href="#">Baby Gifts</a></li>
+                                    <li><a href="#">Home Comforts</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">WOMEN</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">CLOTHING</a>
+                                <ul class="subM">
+                                    <li><a href="#">Coats</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">Knitwear</a></li>
+                                    <li><a href="#">Shirts & Tops</a></li>
+                                    <li><a href="#">Trousers & jeans</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ACCESSORIES</a>
+                                <ul class="subM">
+                                    <li><a href="#">Scarves</a></li>
+                                    <li><a href="#">Wallets</a></li>
+                                    <li><a href="#">Hats & Gloves</a></li>
+                                    <li><a href="#">Belts</a></li>
+                                    <li><a href="#">Eyewear</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">SHOES</a>
+                                <ul class="subM">
+                                    <li><a href="#">Sneakers</a></li>
+                                    <li><a href="#">Sandals</a></li>
+                                    <li><a href="#">Boots</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MEN</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">CLOTHING</a>
+                                <ul class="subM">
+                                    <li><a href="#">Coats</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Casual Shirts</a></li>
+                                    <li><a href="#">Knitwear</a></li>
+                                    <li><a href="#">Suits</a></li>
+                                    <li><a href="#">Trousers & Jeans</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ACCESSORIES</a>
+                                <ul class="subM">
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Wallets</a></li>
+                                    <li><a href="#">Belts</a></li>
+                                    <li><a href="#">Scarves</a></li>
+                                    <li><a href="#">Eyewear</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">SHOES</a>
+                                <ul class="subM">
+                                    <li><a href="#">Sneakers</a></li>
+                                    <li><a href="#">Sandals</a></li>
+                                    <li><a href="#">Boots</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">CHILDREN</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">BABY 0-24 MTHS</a>
+                                <ul class="subM">
+                                    <li><a href="#">Baby Grows</a></li>
+                                    <li><a href="#">Coats</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">Tops</a></li>
+                                    <li><a href="#">Skirts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">GIRL 3-14 YRS</a>
+                                <ul class="subM">
+                                    <li><a href="#">Coats</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">Knitwear</a></li>
+                                    <li><a href="#">Tops</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">BOY 3-14 YRS</a>
+                                <ul class="subM">
+                                    <li><a href="#">Coats</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Sweatshirts</a></li>
+                                    <li><a href="#">Knitwear</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">HANDBAGS</a>
+                    </li>
+                    <li>
+                        <a href="#">THE TRENCH COAT</a>
+                    </li>
+                    <li>
+                        <a href="#">BURBERRY WORLD</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#">BURBERRY COLLABORATES</a>
+                                <ul class="subM">
+                                    <li><a href="#">COLORS x Burberry</a></li>
+                                    <li><a href="#">TB Summer Monogram World</a></li>
+                                    <li><a href="#">Live Sessions</a></li>
+                                    <li><a href="#">Anne Imhof / Eliza</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">COLLECTIONS</a>
+                                <ul class="subM">
+                                    <li><a href="#">Modern Goddesses</a></li>
+                                    <li><a href="#">The World of Olympia Pop-ups</a></li>
+                                    <li><a href="#">TB Summer Monogram Landscapes</a></li>
+                                    <li><a href="#">The Burberry Check</a></li>
+                                    <li><a href="#">The ReBurberry Edit</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">REBURBERRY</a>
+                                <ul class="subM">
+                                    <li><a href="#">Internstional Women's Day</a></li>
+                                    <li><a href="#">Burberry Animal Kingdom</a></li>
+                                    <li><a href="#">a New Identity</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="mNav">
+                <div>
+                    <ul class="gnb">
+                        <li><a href="#">MEMBER</a></li>
+                        <li><a href="#">CART</a></li>
+                    </ul>
+                    <ul id="nav1">
+                        <li>
+                            <a href="#">GIFTS</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">WOMEN'S GIFTS</a>
+                                    <ul class="subM">
+                                        <li><a href="#">All Gifts</a></li>
+                                        <li><a href="#">The Monogram Collection</a></li>
+                                        <li><a href="#">Personalised Gifts</a></li>
+                                        <li><a href="#">Home Comforts</a></li>
+                                        <li><a href="#">Beauty</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">MEN'S GIFTS</a>
+                                    <ul class="subM">
+                                        <li><a href="#">All Gifts</a></li>
+                                        <li><a href="#">Personalised Gifts</a></li>
+                                        <li><a href="#">Home Comforts</a></li>
+                                        <li><a href="#">Grooming</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">CHILDREN'S GIFTS</a>
+                                    <ul class="subM">
+                                        <li><a href="#">All Gifts</a></li>
+                                        <li><a href="#">Baby Gifts</a></li>
+                                        <li><a href="#">Home Comforts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">WOMEN</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">CLOTHING</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Coats</a></li>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Knitwear</a></li>
+                                        <li><a href="#">Shirts & Tops</a></li>
+                                        <li><a href="#">Trousers & jeans</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">ACCESSORIES</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Scarves</a></li>
+                                        <li><a href="#">Wallets</a></li>
+                                        <li><a href="#">Hats & Gloves</a></li>
+                                        <li><a href="#">Belts</a></li>
+                                        <li><a href="#">Eyewear</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">SHOES</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Sneakers</a></li>
+                                        <li><a href="#">Sandals</a></li>
+                                        <li><a href="#">Boots</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MEN</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">CLOTHING</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Coats</a></li>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Casual Shirts</a></li>
+                                        <li><a href="#">Knitwear</a></li>
+                                        <li><a href="#">Suits</a></li>
+                                        <li><a href="#">Trousers & Jeans</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">ACCESSORIES</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Bags</a></li>
+                                        <li><a href="#">Wallets</a></li>
+                                        <li><a href="#">Belts</a></li>
+                                        <li><a href="#">Scarves</a></li>
+                                        <li><a href="#">Eyewear</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">SHOES</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Sneakers</a></li>
+                                        <li><a href="#">Sandals</a></li>
+                                        <li><a href="#">Boots</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">CHILDREN</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">BABY 0-24 MTHS</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Baby Grows</a></li>
+                                        <li><a href="#">Coats</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Tops</a></li>
+                                        <li><a href="#">Skirts</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">GIRL 3-14 YRS</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Coats</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Knitwear</a></li>
+                                        <li><a href="#">Tops</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">BOY 3-14 YRS</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Coats</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Sweatshirts</a></li>
+                                        <li><a href="#">Knitwear</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">HANDBAGS</a>
+                        </li>
+                        <li>
+                            <a href="#">THE TRENCH COAT</a>
+                        </li>
+                        <li>
+                            <a href="#">BURBERRY WORLD</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">BURBERRY COLLABORATES</a>
+                                    <ul class="subM">
+                                        <li><a href="#">COLORS x Burberry</a></li>
+                                        <li><a href="#">TB Summer Monogram World</a></li>
+                                        <li><a href="#">Live Sessions</a></li>
+                                        <li><a href="#">Anne Imhof / Eliza</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">COLLECTIONS</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Modern Goddesses</a></li>
+                                        <li><a href="#">The World of Olympia Pop-ups</a></li>
+                                        <li><a href="#">TB Summer Monogram Landscapes</a></li>
+                                        <li><a href="#">The Burberry Check</a></li>
+                                        <li><a href="#">The ReBurberry Edit</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">REBURBERRY</a>
+                                    <ul class="subM">
+                                        <li><a href="#">Internstional Women's Day</a></li>
+                                        <li><a href="#">Burberry Animal Kingdom</a></li>
+                                        <li><a href="#">a New Identity</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 3. #mainBanner-->
+    <div id="mainBanner">
+        <ul class="banner">
+            <li class="b1"><a href="#"></a></li>
+            <li class="b2"><a href="#"></a></li>
+            <li class="b3"><a href="#"></a></li>
+        </ul>
+        <div class="con">
+            <div class="pager">
+                <span class="pCount">0</span>
+                <span>|</span>
+                <span class="pTotal">0</span>
+            </div>
+            <ul class="pageBtn">
+                <li class="prevBtn"><a href="#"> &lt; </a></li>
+                <li class="nextBtn"><a href="#"> &gt; </a></li>
+            </ul>
+            <div class="timeWrap">
+                <div class="time"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 4. #container -->
+    <div id="containner">
+        <!-- 4-1.시그니처 -->
+        <section class="signatureWrap">
+            <h2 class="title">SIGNATURE</h2>
+            <div class="trenchWrap clearFix">
+                <div class="trench">
+                    <a href="#"><img src="images/trenchcoat.jpg" alt="BURBERRY TRENCH COAT"></a>
+                </div>
+                <div class="textWrap">
+                    <h3 class="subTitle">BURBERRY<br>TRENCH COAT</h3>
+                    <p> Made in Castleford, Yorkshire for over 50 years and cut from gabardine – a revolutionary fabric
+                        that Thomas Burberry invented in 1879. Polished and practical, a beautiful weatherproof cotton
+                        that remains at the heart of Burberry.<br> The trench coat evolved from the Tielocken coat,
+                        patented by Thomas Burberry in 1912. A simple yet refined shape that adapted over the years to
+                        become the instantly recognisable Burberry trench coat.</p>
+                    <p><a href="#">MORE</a></p>
+                </div>
+            </div>
+            <div class="bagWrap clearFix">
+                <div class="bag">
+                    <a href="#"><img src="images/bags.jpg" alt="BURBERRY BAG"></a>
+                </div>
+                <div class="textWrap">
+                    <h3 class="subTitle">BURBERRY<br>BAG</h3>
+                    <p>Every Burberry handbag is crafted with care from the finest materials by expert artisans – at
+                        every step of the process. Learn more about what makes your handbag special and what we do to
+                        ensure it’s a treasured piece for generations to come.</p>
+                    <p><a href="#">MORE</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- 4-2.버버리이야기 -->
+        <section class="storyWrap">
+            <h2 class="title">THE STORY OF BURBERRY</h2>
+            <div class="textWrap">
+                <p>As part of our ReBurberry commitment, we are making changes throughout our company to actively
+                    address the challenges facing our industry and our planet.</p>
+                <p>Eliminating unnecessary single-use plastic packaging is a priority for us,
+                    which is why we have signed up to the 2025 New Plastics Economy Global Commitment.</p>
+                <p><a href="#">MORE</a></p>
+            </div>
+        </section>
+        <!-- 4-3.버버리체크 -->
+        <section class="checkWrap">
+            <h2 class="blind">THE BURBERRY CHECK</h2>
+            <div class="sTitle">
+                <h3>THE BURBERRY CHECK</h3>
+            </div>
+            <div class="check">
+                <div class="checkImg">
+                    <span class="i1"><img src="images/check-h.jpg" alt="THE BURBERRY CHECK"></span>
+                    <span class="i2"><img src="images/check.jpg" alt="THE BURBERRY CHECK"></span>
+                </div>
+                <div class="textWrap">
+                    <h3 class="subTitle">A FLASH OF INSPIRATION</h3>
+                    <p>
+                        In 1967, Jacqueline Dillemman – a buyer in our Paris store – had a flash of inspiration whilst
+                        preparing a fashion presentation for the British ambassador, Sir Patrick Reilly. She removed the
+                        check lining from a coat and used it to wrap luggage and create an umbrella cover. The check
+                        accessory was born.</p>
+                    <p><a href="#">MORE</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- 4-4.신상품-->
+        <section class="newWrap">
+            <h2 class="title">NEW PRODUCT</h2>
+            <div class="new">
+                <a href="#">
+                    <img src="images/new-women.jpg" alt="NEW PRODUCT-WOMEN">
+                    <div class="tBox"></div>
+                    <p class="text">WOMEN</p>
+                </a>
+                <a href="#">
+                    <img src="images/new-children.jpg" alt="NEW PRODUCT-CHILDREN">
+                    <div class="tBox"></div>
+                    <p class="text">CHILDREN</p>
+                </a>
+                <a href="#">
+                    <img src="images/new-men.jpg" alt="NEW PRODUCT-MEN">
+                    <div class="tBox"></div>
+                    <p class="text">MEN</p>
+                </a>
+            </div>
+            <span class="newbg"></span>
+        </section>
+        <!-- 4-5.컬렉션 -->
+        <section class="collectionWrap">
+            <h2 class="title">COLLECTION</h2>
+            <div class="ssWrap clearFix">
+                <div class="ssImg">
+                    <a href="#"><img src="images/c-ss.jpg" alt="THE WORLD OF SPRING/SUMMER 2021"></a>
+                </div>
+                <div class="textWrap">
+                    <h3 class="subTitle">THE WORLD OF SPRING/SUMMER 2021</h3>
+                    <p>Welcome to THE WORLD OF BURBERRY SPRING/SUMMER 2021 by riccardo tisci - an exploration of
+                        contrasting worlds through a darkly romantic love story. Your destination to explore the
+                        collection, our exclusive film, the show experience and more.</p>
+                    <p><a href="#">MORE</a></p>
+                </div>
+            </div>
+            <div class="tbWrap">
+                <div class="textWrap">
+                    <h3 class="subTitle">TB SUMMER MONOGRAM COLLECTION</h3>
+                    <p>To introduce the new collection, Riccardo Tisci has called upon a cast of iconic British
+                        creatives – British photographer Nick Knight, art director Peter Saville and stylist Katy
+                        England – to realise his vision for the TB Summer Monogram campaign, starring Kendall.</p>
+                </div>
+                <div class="tbImg">
+                    <a href="#"><img src="images/c-tb.jpg" alt="TB SUMMER MONOGRAM COLLECTION"></a>
+                </div>
+                <div class="wBox">
+                    <p>A journey from reality to fantasy, the campaign blends real-life capture with a dreamlike digital
+                        world inspired by geometric skateparks and swimming pools, in which Kendall brings to life four
+                        distinctive characters through our summer capsule of womenswear and menswear pieces. The CGI
+                        film is juxtaposed with a series of raw self-portraits captured at home by Kendall.</p>
+                    <p><a href="#">MORE</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- 4-6.선물 -->
+        <section class="giftsWrap clearFix">
+            <div class="center">
+                <h2 class="blind">ALL GIFTS</h2>
+                <div class="textWrap">
+                    <div class="textF">
+                        <h3 class="subTitle">ALL GIFTS</h3>
+                        <span></span>
+                        <p>Discover our selection of gifts for men, women and children.</p>
+                        <p><a href="#">MORE</a></p>
+                    </div>
+                </div>
+                <div class="gridWrap">
+                    <div class="grid">
+                        <a href="#">
+                            <img src="images/gift01.jpg" alt="Vintage Check and Logo Print Silk Skinny Scarf">
+                            <div class="gtBox">
+                                <p>Vintage Check and Logo Print Silk Skinny Scarf</p>
+                                <p>￦ 280,000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid">
+                        <a href="#">
+                            <img src="images/gift02.jpg" alt="Icon Stripe Strap Slip-on Sneakers">
+                            <div class="gtBox">
+                                <p>Icon Stripe Strap Slip-on Sneakers</p>
+                                <p>￦ 360,000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid">
+                        <a href="#">
+                            <img src="images/gift03.jpg" alt="Monogram Motif Enamel and Palladium-plated Cufflinks">
+                            <div class="gtBox">
+                                <p>Monogram Motif Enamel and Palladium-plated Cufflinks</p>
+                                <p>￦ 590,000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid">
+                        <a href="#">
+                            <img src="images/gift04.jpg" alt="Thomas Bear Charm in Trench Coat">
+                            <div class="gtBox">
+                                <p>Thomas Bear Charm in Trench Coat</p>
+                                <p>￦ 500,000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid">
+                        <a href="#">
+                            <img src="images/gift05.jpg" alt="Rose Print Silk Twill Hair Tie">
+                            <div class="gtBox">
+                                <p>Rose Print Silk Twill Hair Tie</p>
+                                <p>￦ 230,000</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid">
+                        <a href="#">
+                            <img src="images/gift06.jpg" alt="Horseferry Print Cotton Canvas Card Case Lanyard">
+                            <div class="gtBox">
+                                <p>Horseferry Print Cotton Canvas Card Case Lanyard</p>
+                                <p>￦ 650,000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4-7.커밍순 -->
+        <section class="comingWrap">
+            <h2 class="title">COMING SOON : MODERN CODDESSES</h2>
+            <div class="videoWrap">
+                <video src="video/burbery-video.mp4" id="myVideo" autoplay muted loop playsinline></video>
+                <a href="#">
+                    <img src="images/pause.png" alt="" class="btn">
+                </a>
+            </div>
+        </section>
+    </div>
+    <!-- 5. footer -->
+    <footer>
+        <div class="footTop clearFix">
+            <div class="center">
+                <div class="ftLeft">
+                    <form class="emailSign">
+                        <label for="uMail">EMAIL SIGN-UP</label><br>
+                        <span>Sign up for email updates on the latest Burberry collections, campaigns and
+                            videos.</span><br>
+                        <input type="text" id="uMail" name="userMail" placeholder="Email*">
+                    </form>
+                    <p><a href="#">STORE LOCATOR</a></p>
+                    <p><a href="#">DOWNLOAD OUR APP</a></p>
+                </div>
+                <div class="ftRight">
+                    <ul class="bMenu">
+                        <li>
+                            <a href="#">CUSTOMER SERVICE ></a>
+                            <ul class="bSub active">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Shopping</a></li>
+                                <li><a href="#">Ordering and Payment</a></li>
+                                <li><a href="#">Returns</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">LEGAL & COOKIES ></a>
+                            <ul class="bSub">
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">Accessibility Statement</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Transparency in the Supply Chain and Modern Slavery Statements</a>
+                        </li>
+                        <li>
+                            <a href="#">FOLLOW US ></a>
+                            <ul class="bSub">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OUR COMPANY ></a>
+                            <ul class="bSub">
+                                <li><a href="#">Our History</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footBottom">
+            <div class="center">
+                <p class="footLogo"><img src="images/foot-logo.png" alt="burberry-footlogo"></p>
+                <div class="footbText">
+                    <p>If you are using a screen-reader and are having problems using this website, please call
+                        0079844341257 or contact us for assistance.</p>
+                    <p>The Burberry Limited, Korea Branch holds the E-Commerce Licence 2017- Gyeonggi Icheon-0040 issued
+                        by the Korean Fair Trade Commission in respect of this website. </p>
+                    <address>The Branch's details are:<br>Address: 33-48, Premium outlet-ro, Majang-myeon, Icheon-si,
+                        Gyeonggi-do. Email: asia.customerservice@burberry.com.<br> Phone: 007 984 434 1257. Tax office
+                        registration number: 211-84-10995. Representative: Jose Antonio Valero Amigo.</address>
+                    <p>If you have any questions about product information which are not answered by the details
+                        provided, please to contact Customer Service. Products shipped to Korea will have manufacturing
+                        dates from January 2016 onwards.</p>
+                </div>
+            </div>
+        </div>
+        <p><a href="#" class="top">T<br>O<br>P</a></p>
+    </footer>
+    <!-- 6. popup -->
+    <div class="popupWrap">
+        <div class="popup clearFix">
+            <div class="leftPopup"><img src="images/popup.jpg" alt="email images"></div>
+            <div class="rightPopup">
+                <div class="pCenter">
+                    <h4>EMAIL SIGN-UP</h4>
+                    <p>Sign up for email updates on the latest Burberry collections, campaigns and videos.</p>
+                    <p><a href="#"><img src="images/popup-close.png" alt="close button" id="clsBtn"></a></p>
+
+                    <form class="emailForm">
+                        <label for="userMail">Email*</label><br>
+                        <input type="text" id="userMail" name="userMail" class="email-form-field"><br>
+                        <div class="formName">
+                            <div class="formFname">
+                                <label for="userFname">First name*</label><br>
+                                <input type="text" id="userFname" name="userFname" class="email-form-field">
+                            </div>
+                            <div class="formLname">
+                                <label for="userLname">Last name*</label><br>
+                                <input type="text" id="userLname" name="userLname" class="email-form-field">
+                            </div>
+                        </div>
+                        <div class="formRaido">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label>
+                        </div><br>
+                        <input type="reset" value="NO THANKS" class="resetBtn">
+                        <input type="submit" value="SIGN-UP" class="submitBtn">
+                        <!-- <button value="SIGN-UP" class="submitBtn">SIGN-UP</button> -->
+                    </form>
+                    <span>Subscribe to receive email updates about Burberry products, services and events. When you
+                        subscribe, you confirm you have read Burberry's Privacy Policy. You may opt out of receiving
+                        email updates at any time using the unsubscribe link in the emails. Burberry uses your personal
+                        information to offer an enhanced customer service tailored to your preferences. You provide your
+                        personal information voluntarily and Burberry can only send you updates with your
+                        consent.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
