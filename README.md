@@ -23,3 +23,6 @@ page
 - jQuery를 사용하여 스크롤 이벤트 등 동적 요소를 포함한 웹 사이트 구현
 - 크로스 브라우징 가능
 
+
+![burberry-index](https://user-images.githubusercontent.com/89468282/131609280-e52cab9b-0bab-4908-b5a9-4cec48f25a4c.png)
+
